@@ -1,5 +1,5 @@
 import mysql.connector
-from mysql.connector import Error
+from mysql.connector
 
 from dotenv import load_dotenv
 import os
@@ -22,7 +22,7 @@ def create_database():
             cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
             print("Database 'alx_book_store' created successfully")
             
-    except Error as e:
+    except mysql.connector.Error as e:
         print(f"The error '{e}' occurred")
     
     finally:
